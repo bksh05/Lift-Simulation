@@ -1,0 +1,108 @@
+/* Global */
+
+body {
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid grey;
+    cursor: pointer
+}
+
+button:active {
+    background-color: lightblue;
+}
+
+/* Root */
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+
+
+/* Building */
+
+.building {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    position: relative;
+
+}
+
+
+/* Floor */
+.floor {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 100px;
+}
+
+.floor:nth-last-child(2) {
+    border-bottom: 1px solid black;
+}
+
+
+.button-container {
+    display: flex;
+    padding: .5rem;
+    gap: .25rem;
+    align-items: center;
+}
+
+.up-button {
+    background-image: url('../images/up.svg');
+    padding: 0.25rem;
+}
+
+.down-button {
+    background-image: url('../images/down.svg');
+    padding: 0.25rem;
+
+}
+
+.up-button>img,
+.down-button>img {
+    height: 1.5rem;
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+
+
+/* Lift */
+
+.liftCanal {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 1rem;
+    flex-basis: auto;
+    padding: 0 0.5rem;
+}
+
+.lift {
+    background-color: yellow;
+    height: 100px;
+
+}

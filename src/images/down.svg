@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="940" height="788" viewBox="0 0 940 788" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
+<g transform="matrix(2.5589 0 0 2.1341 470.0053 393.9949)" id="848183">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-256, -256.05)" d="M 383.6 322.7 L 278.6 423 c -5.8 6 -13.7 9 -22.4 9 c -8.7 0 -16.5 -3 -22.4 -9 L 128.4 322.7 c -12.5 -11.9 -12.5 -31.3 0 -43.2 c 12.5 -11.9 32.7 -11.9 45.2 0 l 50.4 48.2 v -217 c 0 -16.9 14.3 -30.6 32 -30.6 c 17.7 0 32 13.7 32 30.6 v 217 l 50.4 -48.2 c 12.5 -11.9 32.7 -11.9 45.2 0 C 396.1 291.4 396.1 310.7 383.6 322.7 z" stroke-linecap="round"/>
+</g>
+</svg>
