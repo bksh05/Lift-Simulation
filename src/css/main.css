@@ -29,7 +29,7 @@ button:active {
     justify-content: center;
     height: 100vh;
     box-sizing: border-box;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 
@@ -101,6 +101,36 @@ button:active {
 }
 
 .lift {
-    background-color: yellow;
+    display: flex;
+    width: 70px;
     height: 90px;
+    background-color: red;
+    border: 3px black solid;
+    overflow: hidden;
+}
+
+.lift::before {
+    content: "";
+    background-color: silver;
+    border-right: 1px solid black;
+    width: 50%;
+    transition: transform 2.5s;
+
+}
+
+.lift::after {
+    content: "";
+    background-color: silver;
+    border-left: 1px solid black;
+    width: 50%;
+    transition: transform 2.5s;
+}
+
+
+.lift--open::before {
+    transform: translateX(-99%)
+}
+
+.lift--open::after {
+    transform: translateX(99%)
 }

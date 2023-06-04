@@ -1,3 +1,9 @@
-const calculateMarginForLift = (numberOfFloors,floorNumber, floorHeight, liftHeight) => {
-    return (numberOfFloors - floorNumber - 1)*floorHeight + ((floorHeight - liftHeight)/2+1)
+const calculateMarginForLift = (
+  numberOfFloors,
+  floorNumber,
+  floorHeight,
+  liftHeight
+) => {
+  const floorLevel = numberOfFloors - floorNumber - 1;
+  return floorLevel * floorHeight + (floorHeight - liftHeight) / 2 ;
 }
