@@ -2,7 +2,7 @@ const root = document.querySelector("#root");
 const liftInputField = document.querySelector("#lift-input--field");
 const floorInputField = document.querySelector("#floor-input--field");
 const rootWidth = root.offsetWidth - 16 * 2; //padding: 16px,
-const rootHeight = root.offsetHeight - 16 * 2; //padding: 16px,
+const rootHeight = root.offsetHeight - 16 * 2 - 48; //padding: 16px, backButtonHeight: 48px;
 
 const formSubmitHandler = (event) => {
   event.preventDefault();
@@ -61,5 +61,13 @@ const initLiftSimulator = (
     floorHeight,
     liftWidth
   );
+  const backButton = document.createElement('button');
+  backButton.innerText = "Back";
+  backButton.classList.add('back-button');
+  backButton.addEventListener('click', () => {
+    window.location.reload();
+  })
+  root.innerHTML = "";
+  root.appendChild(backButton);
   driver.createBuilding(root);
 };
