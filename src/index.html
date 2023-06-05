@@ -12,15 +12,16 @@
 <body>
   <main id="root">
     <form onsubmit="formSubmitHandler(event);">
+      <h1>Lift Simulator</h1>
       <div class="floor-input--container">
-        <label for="floor-input--label">Number of floors</label>
+        <label for="floor-input--field">Number of floors</label>
         <input id="floor-input--field" type="number" required />
       </div>
       <div class="lift-input--container">
         <label for="lift-input--field">Number of lifts</label>
         <input id="lift-input--field" type="number" required />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" class="submit">Simulate</button>
     </form>
   </main>
   <script src="js/util.js"></script>

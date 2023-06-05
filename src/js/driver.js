@@ -19,7 +19,7 @@ class Driver {
   }
 
   createBuilding(root) {
-    root.innerHTML = "";
+
     const building = document.createElement("div");
     building.classList.add("building");
     Array.from({ length: this.numberOfFloors }).forEach((_, index) => {
@@ -101,10 +101,9 @@ class Driver {
   }
 
   addLiftRequestAtFloor(floorNumber) {
-    if (this.processing.has(floorNumber)) {
+    if (this.processing.has(floorNumber) || this.request.findIndex(fn => fn === floorNumber) > -1) {
       return;
     }
-
     this.request.push(floorNumber);
     if (!this.areLiftMoving) {
       this.areLiftMoving = true;
